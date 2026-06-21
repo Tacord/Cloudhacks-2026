@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+}
+
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Barlow';
+    src: url('./assets/Barlow-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+  }
+}
+
+/* Marquee effect from https://codepen.io/lightbulbdesign/pen/wvywpdg?anon=true&view=pen */
+
+.marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-240%); } /* img width (80%) * no. unique images */
+}
+
+@media (min-width: 768px) { /* Tailwind CSS md: breakpoint */
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-180%); } /* img width (60%) * no. unique images */
+  }
+}
+
+@media (min-width: 1024px) { /* Tailwind CSS lg: breakpoint */
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-120%); } /* img width (40%) * no. unique images */
+  }
+}
