@@ -28,7 +28,7 @@
                             <a href="#sponsors">Partners</a>
                         </li>
                         <li>
-                            <a class="shadow-lg px-5 py-2 mt-2 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-2xl text-1xl text-white font-bold" href="https://cloudhacks-2024.devpost.com/project-gallery" target="_blank">Register</a>
+                            <a id="Fire" class="shadow-lg px-5 py-2 mt-2 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-2xl text-1xl text-white font-bold">Register</a>
                         </li>
                     </ul>
                 </nav>
@@ -38,7 +38,7 @@
 
         <main>
             <section id="hero" class="relative min-h-[90vh] flex flex-col overflow-hidden">
-                <div class="container">
+                <div class="container -mt-12 md:mt-0">
                     <center>
                         <img src="assets/logo.png" class="max-h-[20rem] max-w-[20rem] md:max-h-[25rem] md:max-w-[25rem] lg:max-h-[30rem] lg:max-w-[30rem] ">
                         <h1 class="text-2xl font-bold mt-4">
@@ -47,7 +47,7 @@
                         <h2 class="max-w-2xl px-6 mx-auto mb-[2rem]">
                             Come together with other programmers from across the country for 2 days of coding! Make something cool, and win prizes!
                         </h2>
-                        <a class="md:hidden shadow-lg px-10 py-3 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-3xl text-2xl text-white font-bold" href="https://cloudhacks-2024.devpost.com/project-gallery" target="_blank">Register</a>
+                        <a class="relative z-10 md:hidden shadow-lg px-10 py-3 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-3xl text-2xl text-white font-bold" href="https://cloudhacks-2024.devpost.com/project-gallery" target="_blank">Register</a>
                     </center>
                 </div>
 
@@ -257,5 +257,47 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script>
+    // from https://pagedone.io/docs/confetti-animation
+    var count = 500;
+    var defaults = {
+        origin: { y: 0.5, x: 0.5 },
+    };
+
+    document.getElementById("Fire").onclick = FireCannon;
+
+    function Fire(particleRatio, opts) {
+        confetti(Object.assign({}, defaults, opts, {
+            particleCount: Math.floor(count * particleRatio)
+        }));
+    }
+
+    function FireCannon() {
+
+        Fire(0.25, {
+            spread: 26,
+            startVelocity: 55,
+        });
+        Fire(0.2, {
+            spread: 60,
+        });
+        Fire(0.35, {
+            spread: 100,
+            decay: 0.91,
+            scalar: 0.4
+        });
+        Fire(0.1, {
+            spread: 120,
+            startVelocity: 25,
+            decay: 0.92,
+            scalar: 1.2
+        });
+        Fire(0.1, {
+            spread: 120,
+            startVelocity: 45,
+        });
+    }
+</script>
 </body>
 </html>
