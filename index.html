@@ -16,19 +16,23 @@
                 <nav>
                     <ul class="flex items-center gap-4">   
                         <li>
-                            <a href="#about">About</a>
+                            <a class="hover:underline" href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#pastevents">Past Events</a>
+                            <a class="hover:underline" href="#pastevents">Past Events</a>
                         </li>
                         <li>
-                            <a href="#faq">FAQ</a>
+                            <a class="hover:underline" href="#faq">FAQ</a>
                         </li>
                         <li>
-                            <a href="#sponsors">Partners</a>
+                            <a class="hover:underline" href="#partners">Partners</a>
                         </li>
                         <li>
-                            <a id="Fire" class="shadow-lg px-5 py-2 mt-2 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-2xl text-1xl text-white font-bold">Register</a>
+                            <!-- <a id="Fire" class="shadow-lg px-5 py-2 mt-2 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-2xl text-1xl text-white font-bold cursor-pointer">Register</a> -->
+                            <a class="relative shadow-lg px-5 py-2 mt-2 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-2xl text-1xl text-white font-bold overflow-hidden group cursor-pointer hover:scale-110 duration-300 ease-in-out inline-block hover:-rotate-3">
+                                <span class="absolute inset-0 bg-white opacity-40 rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] blur-sm transition-transform duration-500"></span> 
+                                <span class="relative z-10">Register</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -45,9 +49,12 @@
                             Singapore · 5-6th September 2026
                         </h1>
                         <h2 class="max-w-2xl px-6 mx-auto mb-[2rem]">
-                            Come together with other programmers from across the country for 2 days of coding! Make something cool, and win prizes!
+                            Come together with other programmers from across the country for 2 days of coding! Make something cool, and win prizes! <i class="text-gray-500">Registrations will open soon</i>
                         </h2>
-                        <a class="relative z-10 md:hidden shadow-lg px-10 py-3 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-3xl text-2xl text-white font-bold" href="https://cloudhacks-2024.devpost.com/project-gallery" target="_blank">Register</a>
+                        <a class="relative z-10 md:hidden shadow-lg px-10 py-3 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-3xl text-2xl text-white font-bold overflow-hidden group cursor-pointer hover:scale-110 duration-300 ease-in-out inline-block hover:-rotate-3 inline-block">
+                            <span class="absolute inset-0 bg-white opacity-40 rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] blur-sm transition-transform duration-500"></span> 
+                            <span class="relative z-10">Register</span>
+                        </a>
                     </center>
                 </div>
 
@@ -68,13 +75,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-12">
                     <div class="bg-[#1f6899] rounded-3xl my-4 p-8 shadow-xl md:ml-8">
                         <h1 class="text-white text-4xl font-bold mt-4">What is a Hackathon?</h1>
-                        <h2 class="text-white text-2xl my-4 text-justify">
+                        <h2 class="text-white text-2xl my-4 md:text-justify">
                             A hackathon is a <b class="text-[#ffcf56]">weekend-long</b> event where you program and build a project. You will spend the event planning, programming, testing, and presenting your creation to a panel of judges <b class="text-[#ffcf56]"> (and win prizes!!)</b>
                         </h2>
                     </div>
                     <div class="bg-[#2989C8] rounded-3xl my-4 p-8 shadow-xl md:mr-8">
                         <h1 class="text-white text-4xl font-bold mt-4">What is CloudHacks?</h1>
-                        <h2 class="text-white text-2xl my-4 text-justify">
+                        <h2 class="text-white text-2xl my-4 md:text-justify">
                             CloudHacks is a <b class="text-[#ffcf56]">student-led</b> hackathon aiming to unite avid programmers from across the country and innovate all sorts of solutions to solve pertinent issues, global and local. It provides an opportunity for like-minded individuals to learn, innovate and network over the course of the day, through <b class="text-[#ffcf56]">workshops</b> and <b class="text-[#ffcf56]">intensive programming</b>.
                         </h2>
                     </div>
@@ -83,37 +90,39 @@
 
             <section id="pastevents" class="bg-[#1d212b] py-16">
                 <!-- past events (2023, 2024) with gallery and winning projects -->
-                <div>
-                    <br>
+                <div class="mb-4">
                     <center>
-                        <h1 class=" text-6xl text-white font-bold">Previous Events</h1>
+                        <h1 class=" text-6xl text-white font-bold">Past Events</h1>
                         <h2 class=" text-1xl mt-4 text-white">CloudHacks 2023 & CloudHacks 2024</h2>
                     </center>
                     <br>
                     <div class="relative flex w-max imagemarqueeright">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-1.jpg">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-2.JPG">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-3.JPG">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-4.JPG">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-1.jpg">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-2.JPG">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-3.JPG">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-4.JPG">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-1.jpg">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-2.JPG">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-3.JPG">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-4.JPG">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-1.jpg">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-2.JPG">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-3.JPG">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-4.JPG">
                     </div>
                     <div class="relative flex w-max imagemarqueeleft">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-1.jpg">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-2.jpg">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-3.png">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-4.png">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-1.jpg">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-2.jpg">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-3.png">
-                        <img class="m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-4.png">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-1.jpg">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-2.jpg">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-3.png">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-4.png">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-1.jpg">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-2.jpg">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-3.png">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-4.png">
                     </div>
                 </div>
                 <br>
                 <center>
-                    <a class=" shadow-xl px-10 py-4 mt-4 bg-gradient-to-r from-[#1f6899] to-[#2989c8] rounded-2xl text-2xl text-white font-bold" href="https://cloudhacks-2024.devpost.com/project-gallery" target="_blank">View past projects</a>
+                    <a class="relative shadow-xl px-10 py-4 mt-4 bg-gradient-to-r from-[#1f6899] to-[#2989c8] rounded-2xl text-2xl text-white font-bold overflow-hidden group cursor-pointer hover:scale-105 duration-300 inline-block" href="https://cloudhacks-2024.devpost.com/project-gallery" target="_blank">
+                        <span class="absolute inset-0 bg-white opacity-40 rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] blur-sm transition-transform duration-500"></span> 
+                        <span class="relative z-10">View past projects</span>
+                    </a>
                 </center>
             </section>
 
@@ -127,7 +136,7 @@
                     
                     <div class="hs-accordion-group mx-5 md:mx-[20vh] lg:mx-[30vh]" >
                         <div class="hs-accordion" id="hs-basic-heading-one">
-                            <button class="py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-one">
+                            <button class="cursor-pointer py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-one">
                                 What if I've never been to a hackathon before?
                                 <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                                 <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
@@ -140,20 +149,20 @@
                         </div>
 
                         <div class="hs-accordion" id="hs-basic-heading-two">
-                            <button class="py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-two">
+                            <button class="cursor-pointer py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-two">
                                 Who can participate?
                                 <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                                 <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
                             </button>
                             <div id="hs-basic-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-two">
                             <p class="text-foreground text-2xl">
-                                We welcome and encourage anyone between high school and university of any programming skill level to participate.
+                                We welcome and encourage anyone between secondary school and university of any programming skill level to participate.
                             </p>
                             </div>
                         </div>
 
                         <div class="hs-accordion" id="hs-basic-heading-three">
-                            <button class="py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-three">
+                            <button class="cursor-pointer py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-three">
                                 How much does it cost to attend?
                                 <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                                 <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
@@ -166,7 +175,7 @@
                         </div>
 
                         <div class="hs-accordion" id="hs-basic-heading-four">
-                            <button class="py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-four">
+                            <button class="cursor-pointer py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-four">
                                 What if I can't code?
                                 <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                                 <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
@@ -179,7 +188,7 @@
                         </div>
 
                         <div class="hs-accordion" id="hs-basic-heading-five">
-                            <button class="py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-five">
+                            <button class="cursor-pointer py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-five">
                                 How many people can there be in a team?
                                 <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                                 <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
@@ -192,7 +201,7 @@
                         </div>
 
                         <div class="hs-accordion" id="hs-basic-heading-six">
-                            <button class="py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-six">
+                            <button class="cursor-pointer py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-six">
                                 What can I make?
                                 <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                                 <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
@@ -205,7 +214,7 @@
                         </div>
 
                         <div class="hs-accordion" id="hs-basic-heading-seven">
-                            <button class="py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-seven">
+                            <button class="cursor-pointer py-6 text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-seven">
                                 What do I need to bring to CloudHacks?
                                 <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                                 <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
@@ -218,12 +227,18 @@
                         </div>
 
                     </div>
-
+                    <center>
+                        <h2 class="mt-8 text-2xl">Reach out to our team if you have any further questions!</h2>
+                        <a class="relative shadow-xl px-10 py-4 mt-4 bg-gradient-to-r from-[#1f6899] to-[#2989c8] rounded-2xl text-2xl text-white font-bold overflow-hidden group cursor-pointer hover:scale-105 duration-300 inline-block" href="https://cloudhacks-2024.devpost.com/project-gallery" target="_blank">
+                                    <span class="absolute inset-0 bg-white opacity-40 rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] blur-sm transition-transform duration-600"></span> 
+                                    <span class="relative z-10">hello.cloudhacks@gmail.com</span>
+                                </a>
+                    </center>
                 </div>
             </section>
 
                 <!-- sponsors -->
-                <section id="sponsors" class="bg-white py-16">
+                <section id="partners" class="bg-white py-16">
                     <center>
                         <h1 class="font-bold text-6xl text-black mb-10 ">Our Partners</h1>
                     </center>
@@ -233,17 +248,20 @@
                         <img src="assets/placeholderlogo.png" alt="???" class="h-40 md:h-48 object-contain">
                     </div>
 
-                    <div class="border border-[#2989c8] border-4 rounded-3xl my-4 p-8 shadow-xl mt-16 md:mx-16 lg:mx-32">
+                    <div class="border border-[#2989c8] border-4 rounded-3xl my-4 p-8 shadow-xl mt-16 mx-[2vh] md:mx-16 lg:mx-32">
                         <center>
                             <h1 class="text-4xl font-bold mt-4">Sponsor us!</h1>
                         </center>
-                        <h2 class="text-2xl my-4 text-justify">
+                        <h2 class="text-2xl my-4 md:text-justify">
                             The next generation of software engineers, designers and entrepreneurs are coming to hackathons to have fun, compete for prizes, and learn new skills. Sponsoring a hackathon is a great way to get access to the top IT and technical talent. By sponsoring CloudHacks, you'll not only gain exposure and brand recognition but also high levels of student engagement, and maybe even see a problem you face in your organization solved.
                             <br><br>
                             <center>
                                 <b>Want to make a lasting impression on the next generation of innovators?</b>
-                                <br><br><br>
-                                <a class=" shadow-xl px-10 py-4 mt-4 bg-gradient-to-r from-[#1f6899] to-[#2989c8] rounded-2xl text-2xl text-white font-bold" href="mailto:sponsor.cloudhacks@gmail.com" target="_blank">sponsor.cloudhacks@gmail.com</a>
+                                <br><br>
+                                <a class="relative shadow-xl px-10 py-4 mt-4 bg-gradient-to-r from-[#1f6899] to-[#2989c8] rounded-2xl text-2xl text-white font-bold overflow-hidden group cursor-pointer hover:scale-105 duration-300 inline-block" href="https://cloudhacks-2024.devpost.com/project-gallery" target="_blank">
+                                    <span class="absolute inset-0 bg-white opacity-40 rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] blur-sm transition-transform duration-600"></span> 
+                                    <span class="relative z-10">sponsor.cloudhacks@gmail.com</span>
+                                </a>
                             </center>
                         </h2>
                     </div>
@@ -253,6 +271,12 @@
 
         <footer class="w-full mt-auto bg-white">
             <img src="assets/footer.png" alt="CloudHacks Footer" class="w-full h-auto block">
+            <center>
+                <h1 class="my-0">CloudHacks is fiscally sponsored by HCB, a project by The Hack Foundation (d.b.a. Hack Club), a 501 (c) (3) nonprofit. (EIN: 81-2908499)</h1>
+                <br>
+                <h1 class="-my-4">© 2026 CloudHacks. All rights reserved.</h1>
+                <br>
+            </center>
         </footer>
 
     </div>
