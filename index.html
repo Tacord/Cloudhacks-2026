@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +16,19 @@
                 <nav>
                     <ul class="flex items-center gap-4">   
                         <li>
-                            <a>About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a>Past Events</a>
+                            <a href="#pastevents">Past Events</a>
                         </li>
                         <li>
-                            <a>FAQ</a>
+                            <a href="#faq">FAQ</a>
                         </li>
                         <li>
-                            <a>Partners</a>
+                            <a href="#sponsors">Partners</a>
                         </li>
                         <li>
-                            <a>Register</a>
+                            <a class="shadow-lg px-5 py-2 mt-2 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-2xl text-1xl text-white font-bold" href="https://cloudhacks-2024.devpost.com/project-gallery" target="_blank">Register</a>
                         </li>
                     </ul>
                 </nav>
@@ -67,13 +67,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-12">
                     <div class="bg-[#1f6899] rounded-3xl my-4 p-8 shadow-xl md:ml-8">
                         <h1 class="text-white text-4xl font-bold mt-4">What is a Hackathon?</h1>
-                        <h2 class="text-white text-2xl my-4">
+                        <h2 class="text-white text-2xl my-4 text-justify">
                             A hackathon is a <b class="text-[#ffcf56]">weekend-long</b> event where you program and build a project. You will spend the event planning, programming, testing, and presenting your creation to a panel of judges <b class="text-[#ffcf56]"> (and win prizes!!)</b>
                         </h2>
                     </div>
                     <div class="bg-[#2989C8] rounded-3xl my-4 p-8 shadow-xl md:mr-8">
-                        <h1 class="text-white text-4xl font-bold mt-4">What is Cloudhacks?</h1>
-                        <h2 class="text-white text-2xl my-4">
+                        <h1 class="text-white text-4xl font-bold mt-4">What is CloudHacks?</h1>
+                        <h2 class="text-white text-2xl my-4 text-justify">
                             CloudHacks is a <b class="text-[#ffcf56]">student-led</b> hackathon aiming to unite avid programmers from across the country and innovate all sorts of solutions to solve pertinent issues, global and local. It provides an opportunity for like-minded individuals to learn, innovate and network over the course of the day, through <b class="text-[#ffcf56]">workshops</b> and <b class="text-[#ffcf56]">intensive programming</b>.
                         </h2>
                     </div>
@@ -86,7 +86,7 @@
                     <br>
                     <center>
                         <h1 class=" text-6xl text-white font-bold">Previous Events</h1>
-                        <h2 class=" text-1xl mt-4 text-white">Cloudhacks 2023 & Cloudhacks 2024</h2>
+                        <h2 class=" text-1xl mt-4 text-white">CloudHacks 2023 & CloudHacks 2024</h2>
                     </center>
                     <br>
                     <div class="relative flex w-max imagemarqueeright">
@@ -120,7 +120,7 @@
             <section id="faq" class="bg-[#e3eff4] py-16">
                 <div>
                     <center>
-                        <h1 class="mb-8 text-6xl font-bold">Frequency Asked Questions</h1>
+                        <h1 class="mb-8 text-6xl font-bold">Frequently Asked Questions</h1>
                     </center>
                     <br>
                     
@@ -222,13 +222,35 @@
             </section>
 
                 <!-- sponsors -->
-                <div class="container">
-                    <h1>hiawefdddawef</h1>
+                <section id="sponsors" class="bg-white py-16">
+                    <center>
+                        <h1 class="font-bold text-6xl text-black mb-10 ">Our Partners</h1>
+                    </center>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center justify-items-center max-w-5xl mx-auto">
+                        <img src="assets/hackclublogo.png" alt="Hack Club" class="h-40 md:h-48 object-contain">
+                        <img src="assets/placeholderlogo.png" alt="???" class="h-40 md:h-48 object-contain">
+                        <img src="assets/placeholderlogo.png" alt="???" class="h-40 md:h-48 object-contain">
+                    </div>
+
+                    <div class="border border-[#2989c8] border-4 rounded-3xl my-4 p-8 shadow-xl mt-16 md:mx-16 lg:mx-32">
+                        <center>
+                            <h1 class="text-4xl font-bold mt-4">Sponsor us!</h1>
+                        </center>
+                        <h2 class="text-2xl my-4 text-justify">
+                            The next generation of software engineers, designers and entrepreneurs are coming to hackathons to have fun, compete for prizes, and learn new skills. Sponsoring a hackathon is a great way to get access to the top IT and technical talent. By sponsoring CloudHacks, you'll not only gain exposure and brand recognition but also high levels of student engagement, and maybe even see a problem you face in your organization solved.
+                            <br><br>
+                            <center>
+                                <b>Want to make a lasting impression on the next generation of innovators?</b>
+                                <br><br><br>
+                                <a class=" shadow-xl px-10 py-4 mt-4 bg-gradient-to-r from-[#1f6899] to-[#2989c8] rounded-2xl text-2xl text-white font-bold" href="mailto:sponsor.cloudhacks@gmail.com" target="_blank">sponsor.cloudhacks@gmail.com</a>
+                            </center>
+                        </h2>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <footer class="w-full mt-auto">
+        <footer class="w-full mt-auto bg-white">
             <img src="assets/footer.png" alt="CloudHacks Footer" class="w-full h-auto block">
         </footer>
 
