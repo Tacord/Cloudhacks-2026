@@ -602,6 +602,9 @@
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
+  .grid-cols-\[x\] {
+    grid-template-columns: x;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -1237,6 +1240,11 @@
   .disabled\:opacity-50 {
     &:disabled {
       opacity: 50%;
+    }
+  }
+  .min-\[400px\]\:grid-cols-1 {
+    @media (width >= 400px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
   .min-\[400px\]\:grid-cols-3 {
