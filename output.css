@@ -285,6 +285,9 @@
   .-bottom-6 {
     bottom: calc(var(--spacing) * -6);
   }
+  .-bottom-8 {
+    bottom: calc(var(--spacing) * -8);
+  }
   .bottom-6 {
     bottom: calc(var(--spacing) * 6);
   }
@@ -355,11 +358,29 @@
   .mx-5 {
     margin-inline: calc(var(--spacing) * 5);
   }
+  .mx-32 {
+    margin-inline: calc(var(--spacing) * 32);
+  }
   .mx-\[2vh\] {
     margin-inline: 2vh;
   }
+  .mx-\[5vh\] {
+    margin-inline: 5vh;
+  }
+  .mx-\[15vh\] {
+    margin-inline: 15vh;
+  }
+  .mx-\[30vh\] {
+    margin-inline: 30vh;
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .-my-0 {
+    margin-block: 0;
+  }
+  .-my-2 {
+    margin-block: calc(var(--spacing) * -2);
   }
   .-my-4 {
     margin-block: calc(var(--spacing) * -4);
@@ -1334,6 +1355,11 @@
       bottom: calc(var(--spacing) * -8);
     }
   }
+  .md\:-bottom-10 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * -10);
+    }
+  }
   .md\:mx-0 {
     @media (width >= 48rem) {
       margin-inline: 0;
@@ -1344,9 +1370,19 @@
       margin-inline: calc(var(--spacing) * 16);
     }
   }
+  .md\:mx-\[10vh\] {
+    @media (width >= 48rem) {
+      margin-inline: 10vh;
+    }
+  }
   .md\:mx-\[20vh\] {
     @media (width >= 48rem) {
       margin-inline: 20vh;
+    }
+  }
+  .md\:mx-\[25vh\] {
+    @media (width >= 48rem) {
+      margin-inline: 25vh;
     }
   }
   .md\:mx-auto {
