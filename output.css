@@ -634,6 +634,15 @@
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
+  .grid-cols-\[2\] {
+    grid-template-columns: 2;
+  }
+  .grid-cols-\[3\] {
+    grid-template-columns: 3;
+  }
+  .grid-cols-\[5\] {
+    grid-template-columns: 5;
+  }
   .grid-cols-\[x\] {
     grid-template-columns: x;
   }
@@ -645,9 +654,6 @@
   }
   .flex-wrap {
     flex-wrap: wrap;
-  }
-  .place-items-center {
-    place-items: center;
   }
   .items-center {
     align-items: center;
