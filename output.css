@@ -547,6 +547,9 @@
   .w-\[70vw\] {
     width: 70vw;
   }
+  .w-\[75vw\] {
+    width: 75vw;
+  }
   .w-\[80vw\] {
     width: 80vw;
   }
@@ -707,6 +710,18 @@
   }
   .gap-x-3 {
     column-gap: calc(var(--spacing) * 3);
+  }
+  .gap-x-8 {
+    column-gap: calc(var(--spacing) * 8);
+  }
+  .gap-x-16 {
+    column-gap: calc(var(--spacing) * 16);
+  }
+  .gap-y-4 {
+    row-gap: calc(var(--spacing) * 4);
+  }
+  .gap-y-8 {
+    row-gap: calc(var(--spacing) * 8);
   }
   .self-center {
     align-self: center;
@@ -1185,6 +1200,13 @@
       }
     }
   }
+  .group-hover\:rotate-20 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        rotate: 20deg;
+      }
+    }
+  }
   .group-hover\:opacity-100 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1208,6 +1230,16 @@
     &::before {
       content: var(--tw-content);
       z-index: 1;
+    }
+  }
+  .hover\:scale-90 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 90%;
+        --tw-scale-y: 90%;
+        --tw-scale-z: 90%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
     }
   }
   .hover\:scale-105 {
@@ -1237,6 +1269,13 @@
       }
     }
   }
+  .hover\:-rotate-2 {
+    &:hover {
+      @media (hover: hover) {
+        rotate: calc(2deg * -1);
+      }
+    }
+  }
   .hover\:-rotate-3 {
     &:hover {
       @media (hover: hover) {
@@ -1244,10 +1283,24 @@
       }
     }
   }
+  .hover\:-rotate-360 {
+    &:hover {
+      @media (hover: hover) {
+        rotate: calc(360deg * -1);
+      }
+    }
+  }
   .hover\:rotate-1 {
     &:hover {
       @media (hover: hover) {
         rotate: 1deg;
+      }
+    }
+  }
+  .hover\:rotate-2 {
+    &:hover {
+      @media (hover: hover) {
+        rotate: 2deg;
       }
     }
   }
@@ -1476,6 +1529,16 @@
   .md\:gap-24 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 24);
+    }
+  }
+  .md\:gap-x-16 {
+    @media (width >= 48rem) {
+      column-gap: calc(var(--spacing) * 16);
+    }
+  }
+  .md\:gap-x-24 {
+    @media (width >= 48rem) {
+      column-gap: calc(var(--spacing) * 24);
     }
   }
   .md\:py-12 {
