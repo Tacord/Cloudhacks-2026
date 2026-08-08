@@ -1,31 +1,39 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
-  <title>Cloudhacks 2026</title>
+  <title>CloudHacks 2026</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
 </head>
 <body class="bg-[#E3EFF4]">
-    <div class="no-scrollbar overflow-y-auto w-full bg-[url('assets/header.png')] bg-[length:100%_auto] bg-top bg-no-repeat">
+    <div class="overflow-x-hidden no-scrollbar overflow-y-auto w-full bg-[url('assets/header.png')] bg-[length:100%_auto] bg-top bg-no-repeat">
         <br>
-        <header>
-            <div class="bg-[#FFFFFF] rounded-3xl max-w-[50rem] lg:mx-auto shadow-lg">
+        <header class="invisible md:visible">
+            <div class="bg-[#FFFFFF] rounded-3xl max-w-[50rem] md:mx-auto shadow-lg">
             <div class="container py-6 flex items-center justify-between">
-                <div class="text-2xl font-bold">Cloudhacks 2026</div>
+                <div class="text-2xl font-bold">CloudHacks 2026</div>
                 <nav>
                     <ul class="flex items-center gap-4">   
                         <li>
-                            <a>About</a>
+                            <a class="hover:underline" href="#about">About</a>
                         </li>
                         <li>
-                            <a>Gallery</a>
+                            <a class="hover:underline" href="#pastevents">Past Events</a>
                         </li>
                         <li>
-                            <a>FAQ</a>
+                            <a class="hover:underline" href="#faq">FAQ</a>
                         </li>
                         <li>
-                            <a>Register</a>
+                            <a class="hover:underline" href="#partners">Partners</a>
+                        </li>
+                        <li>
+                            <!-- <a id="Fire" class="shadow-lg px-5 py-2 mt-2 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-2xl text-1xl text-white font-bold cursor-pointer">Register</a> -->
+                            <a id="Fire" class="relative shadow-lg px-5 py-2 mt-2 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-2xl text-1xl text-white font-bold overflow-hidden group cursor-pointer hover:scale-110 duration-300 ease-in-out inline-block hover:-rotate-3">
+                                <span class="absolute inset-0 bg-white opacity-40 rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] blur-sm transition-transform duration-500"></span> 
+                                <span class="relative z-10">Register</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -34,34 +42,363 @@
         </header>
 
         <main>
-            <section id="hero" class="relative min-h-screen overflow-hidden">
-                <div class="container">
+            <section id="hero" class="relative min-h-[90vh] flex flex-col overflow-hidden">
+                <div class="container -mt-12 md:mt-0">
                     <center>
-                        <img src="assets/logo.png" class="max-h-[30rem] max-w-[30rem] ">
-                        <h1 class="text-2xl font-bold">
-                            Singapore · 5-6th September 2026
+                        <img src="assets/logo.png" class="max-h-[20rem] max-w-[20rem] md:max-h-[25rem] md:max-w-[25rem] lg:max-h-[30rem] lg:max-w-[30rem] ">
+                        <h1 class="text-2xl font-bold mt-4">
+                            Singapore · 7-8 September 2026
                         </h1>
-                        <h2 class="max-w-100 mb-[2rem]">
-                            Come together with other programmers from across the country for 2 days of coding! Make something cool, and win prizes!
+                        <h1 class="text-[#2c92d5] text-lg font-bold mb-4">Lorong AI @ one-north</h1>
+                        <h2 class="max-w-2xl px-6 mx-auto mb-[1rem]">
+                            Come together with other programmers from across the country for 2 days of coding! Make something cool, and win prizes! <i class="text-gray-500">Registrations will open soon</i>
                         </h2>
+                        <a class="relative z-10 md:hidden shadow-lg px-10 py-3 bg-gradient-to-r from-[#f27152] to-[#ffa356] rounded-3xl text-2xl text-white font-bold overflow-hidden group cursor-pointer hover:scale-110 duration-300 ease-in-out inline-block hover:-rotate-3 inline-block">
+                            <span class="absolute inset-0 bg-white opacity-40 rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] blur-sm transition-transform duration-500"></span> 
+                            <span class="relative z-10">Register</span>
+                        </a>
                     </center>
                 </div>
-                <div class="overflow-hidden w-full mx-0">
+
+                <div class="relative flex w-max bg-[#E3EFF4] mt-auto">
                     <div class="relative flex marquee">
-                        <img class="inline w-4/5 md:w-3/5 lg:w-2/5" alt="CLOUDHACKS" src="assets/marquee1.png">
-                        <img class="inline w-4/5 md:w-3/5 lg:w-2/5" alt="CLOUDHACKS" src="assets/marquee2.png">
-                        <img class="inline w-4/5 md:w-3/5 lg:w-2/5" alt="CLOUDHACKS" src="assets/marquee3.png">
-                        <img class="inline w-4/5 md:w-3/5 lg:w-2/5" alt="CLOUDHACKS" src="assets/marquee1.png">
-                        <img class="inline w-4/5 md:w-3/5 lg:w-2/5" alt="CLOUDHACKS" src="assets/marquee2.png">
-                        <img class="inline w-4/5 md:w-3/5 lg:w-2/5" alt="CLOUDHACKS" src="assets/marquee3.png">
+                        <img class="shrink-0 w-[80vw] md:w-[60vw] lg:w-[40vw]" alt="CLOUDHACKS" src="assets/marquee1.png">
+                        <img class="shrink-0 w-[80vw] md:w-[60vw] lg:w-[40vw]" alt="CLOUDHACKS" src="assets/marquee2.png">
+                        <img class="shrink-0 w-[80vw] md:w-[60vw] lg:w-[40vw]" alt="CLOUDHACKS" src="assets/marquee3.png">
+                        <img class="shrink-0 w-[80vw] md:w-[60vw] lg:w-[40vw]" alt="CLOUDHACKS" src="assets/marquee1.png">
+                        <img class="shrink-0 w-[80vw] md:w-[60vw] lg:w-[40vw]" alt="CLOUDHACKS" src="assets/marquee2.png">
+                        <img class="shrink-0 w-[80vw] md:w-[60vw] lg:w-[40vw]" alt="CLOUDHACKS" src="assets/marquee3.png">
                     </div>
                 </div>
+            </section>
 
-                <div class="container">
-                    <h1>hi</h1>
+            <section id="about" class="bg-[#e3eff4] pt-8 pb-12 mx-4 md:mx-0">
+                <!-- about section - what is hackathon, cloudhacks etc -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:py-12">
+                    <div class="relative bg-[#1f6899] rounded-3xl my-4 p-8 shadow-xl md:ml-8">
+                        <h1 class="text-white text-2xl md:text-3xl lg:text-4xl font-bold mt-4">What is a Hackathon?</h1>
+                        <h2 class="text-white text-1xl lg:text-2xl my-4 md:text-justify pb-24">
+                            A hackathon is a <b class="text-[#ffcf56]">weekend-long</b> event where you program and build a project. You will spend the event planning, programming, testing, and presenting your creation to a panel of judges <b class="text-[#ffcf56]"> (and win prizes!)</b>
+                        </h2>
+                        <img class="absolute -bottom-8 -right-4 md:-bottom-8 md:-right-8 w-[25vh] md:w-[30vh] lg:w-[25vh] z-0 drop-shadow-2xl transition-transform duration-500 ease-in-out hover:rotate-10" src="assets/cats/fly.png">
+                    </div>
+                    <div class="relative bg-[#2989C8] rounded-3xl my-4 p-8 shadow-xl md:mr-8">
+                        <h1 class="text-white text-2xl md:text-3xl lg:text-4xl  font-bold mt-4">What is CloudHacks?</h1>
+                        <h2 class="text-white text-1xl lg:text-2xl my-4 md:text-justify pb-20">
+                            CloudHacks is a <b class="text-[#ffcf56]">student-led</b> hackathon aiming to unite avid programmers from across the country and innovate all sorts of solutions to solve pertinent issues, global and local. It provides an opportunity for like-minded individuals to learn, innovate and network over the course of the day, through <b class="text-[#ffcf56]">workshops</b> and <b class="text-[#ffcf56]">intensive programming</b>.
+                        </h2>
+                        <img class="absolute -bottom-8 -right-4 md:-bottom-8 md:-right-8 w-[25vh] md:w-[30vh] lg:w-[25vh] z-0 drop-shadow-2xl transition-transform duration-500 ease-in-out hover:rotate-10" src="assets/cloudguys/yip.png">
+                    </div>
+                </div>
+            </section>
+
+            <section id="pastevents" class="bg-[#1d212b] py-16">
+                <!-- past events (2023, 2024) with gallery and winning projects -->
+                <div class="mb-4">
+                    <center>
+                        <h1 class=" text-4xl md:text-5xl lg:text-6xl text-white font-bold">Past Events</h1>
+                        <h2 class=" text-1xl mt-4 text-white">CloudHacks 2023 & CloudHacks 2024</h2>
+                    </center>
+                    <br>
+                    <div class="relative flex w-max imagemarqueeright">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-1.jpg">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-2.jpg">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-3.jpg">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-4.jpg">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-1.jpg">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-2.jpg">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-3.jpg">
+                        <img class="hover:scale-105 hover:rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2023-4.jpg">
+                    </div>
+                    <div class="relative flex w-max imagemarqueeleft">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-1.jpg">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-2.jpg">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-3.jpg">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-4.jpg">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-1.jpg">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-2.jpg">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-3.jpg">
+                        <img class="hover:scale-105 hover:-rotate-1 transition-transform duration-300 m-2 rounded-3xl shrink-0 w-[70vw] md:w-[50vw] lg:w-[30vw]" alt="CLOUDHACKS" src="assets/2024-4.jpg">
+                    </div>
+                </div>
+                <br>
+                <center>
+                    
+                    <div class="relative inline-block mt-4 group">
+                        <img class="absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 opacity-0 group-hover:-translate-y-4 w-[0vw] group-hover:w-[40vw] group-hover:md:w-[25vw] group-hover:lg:w-[15vw] group-hover:opacity-100 transition-all duration-500 ease-out z-0 pointer-events-none" src="assets/cloudguys/wonder.png">
+                            <a class="break-all md:break-normal w-[70vw] md:w-auto relative shadow-xl px-10 py-4 mt-4 bg-gradient-to-r from-[#1f6899] to-[#2989c8] rounded-2xl text-lg md:text-2xl text-white font-bold overflow-hidden group cursor-pointer hover:scale-105 duration-300 inline-block" href="https://cloudhacks-2024.devpost.com/project-gallery" target="_blank">
+                                <span class="absolute inset-0 bg-white opacity-40 rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] blur-sm transition-transform duration-600"></span> 
+                                <span class="relative z-10">View past projects</span>
+                        </a>
+                    </div>
+
+                    <!-- <a class="relative shadow-xl px-10 py-4 mt-4 bg-gradient-to-r from-[#1f6899] to-[#2989c8] rounded-2xl text-2xl text-white font-bold overflow-hidden group cursor-pointer hover:scale-105 duration-300 inline-block" href="https://cloudhacks-2024.devpost.com/project-gallery" target="_blank">
+                        <span class="absolute inset-0 bg-white opacity-40 rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] blur-sm transition-transform duration-500"></span> 
+                        <span class="relative z-10">View past projects</span>
+                    </a> -->
+                </center>
+            </section>
+
+            <!-- faq (can copy and paste from old website) -->
+            <section id="faq" class="bg-[#e3eff4] py-16">
+                <div>
+                    <center>
+                        <h1 class="mb-8 pb-4 text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#1f6899] to-[#79c7f7] bg-clip-text text-transparent">Frequently Asked Questions</h1>
+                    </center>
+                    <br>
+                    
+                    <div class="hs-accordion-group mx-5 md:mx-[20vh] lg:mx-[30vh]" >
+                        <div class="hs-accordion" id="hs-basic-heading-one">
+                            <button class="cursor-pointer py-6 text-2xl md:text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-one">
+                                What if I've never been to a hackathon before?
+                                <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            </button>
+                            <div id="hs-basic-collapse-one" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-one">
+                            <p class="text-foreground text-1xl md:text-2xl">
+                                That's okay! Whether it's your first or tenth hackathon, you're welcome to join. Even if you're not familiar with programming, you don't have to be an expert to participate in a hackathon. You'll still be able to connect with other participants, attend workshops, listen to guest speakers, and learn about the world of tech!
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="hs-accordion" id="hs-basic-heading-two">
+                            <button class="cursor-pointer py-6 text-2xl md:text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-two">
+                                Who can participate?
+                                <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            </button>
+                            <div id="hs-basic-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-two">
+                            <p class="text-foreground text-1xl md:text-2xl">
+                                We welcome and encourage anyone between secondary school and university of any programming skill level to participate.
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="hs-accordion" id="hs-basic-heading-three">
+                            <button class="cursor-pointer py-6 text-2xl md:text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-three">
+                                How much does it cost to attend?
+                                <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            </button>
+                            <div id="hs-basic-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-three">
+                            <p class="text-foreground text-1xl md:text-2xl">
+                                Nothing! The event is free to join, and we'll provide catering, workspace, WiFi, and also swag!
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="hs-accordion" id="hs-basic-heading-four">
+                            <button class="cursor-pointer py-6 text-2xl md:text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-four">
+                                What if I can't code?
+                                <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            </button>
+                            <div id="hs-basic-collapse-four" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-four">
+                            <p class="text-foreground text-1xl md:text-2xl">
+                                Don't let that restrain your interest for computing and love for innovation! We welcome students of all skill levels and backgrounds to join CloudHacks. Multiple beginner workshops will be held at the event, and you'll also be able to work with mentors and other participants to develop your skills.
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="hs-accordion" id="hs-basic-heading-five">
+                            <button class="cursor-pointer py-6 text-2xl md:text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-five">
+                                How many people can there be in a team?
+                                <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            </button>
+                            <div id="hs-basic-collapse-five" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-five">
+                            <p class="text-foreground text-1xl md:text-2xl">
+                                You can work alone or in groups of up to 4 people.
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="hs-accordion" id="hs-basic-heading-six">
+                            <button class="cursor-pointer py-6 text-2xl md:text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-six">
+                                What can I make?
+                                <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            </button>
+                            <div id="hs-basic-collapse-six" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-six">
+                            <p class="text-foreground text-1xl md:text-2xl">
+                                Anything you want! You can make a website, game, app, or any tech-related product. You can also make a project that uses hardware, such as a Raspberry Pi or Arduino. Unfortunately, we won't be able to provide any hardware on-site, so you'll have to bring your own.
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="hs-accordion" id="hs-basic-heading-seven">
+                            <button class="cursor-pointer py-6 text-2xl md:text-3xl hs-accordion-toggle hs-accordion-active:text-primary-active py-3 inline-flex items-center gap-x-3 w-full font-bold text-start text-foreground hover:text-muted-foreground-1 focus:outline-hidden focus:text-muted-foreground-1 rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-collapse-seven">
+                                What do I need to bring to CloudHacks?
+                                <svg class="hs-accordion-active:hidden block size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                <svg class="hs-accordion-active:block hidden size-4 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            </button>
+                            <div id="hs-basic-collapse-seven" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-heading-seven">
+                            <p class="text-foreground text-1xl md:text-2xl">
+                                Devices, chargers, essential needs, and whatever other accessories (e.g. hardware) you think you should have for your project. You should also bring a water bottle or anything else to make the most out of our hackathon. We will be releasing more details once registrations close.
+                            </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <center>
+                        <h2 class="mt-8 text-2xl">Reach out to our team if you have any further questions!</h2>
+                        <div class="relative inline-block mt-4 group">
+                            <img class="absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 opacity-0 group-hover:-translate-y-4 w-[0vw] group-hover:w-[40vw] group-hover:md:w-[25vw] group-hover:lg:w-[15vw] group-hover:opacity-100 transition-all duration-500 ease-out z-0 pointer-events-none" src="assets/cloudguys/think.png">
+                                <a class="break-all md:break-normal w-[75vw] md:w-auto relative shadow-xl px-10 py-4 mt-4 bg-gradient-to-r from-[#1f6899] to-[#2989c8] rounded-2xl text-lg md:text-2xl text-white font-bold overflow-hidden group cursor-pointer hover:scale-105 duration-300 inline-block" href="mailto:hello@cloudhacks.org" target="_blank">
+                                    <span class="absolute inset-0 bg-white opacity-40 rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] blur-sm transition-transform duration-600"></span> 
+                                    <span class="relative z-10">hello@cloudhacks.org</span>
+                            </a>
+                        </div>
+                    </center>
+                </div>
+            </section>
+
+                <!-- sponsors -->
+                <section id="partners" class="bg-white py-16">
+                    <!-- btw when we add more partners change the grid-cols-[x] to add x amount of columns -->
+                    <div class="flex flex-col items-center gap-x-16 md:gap-x-24 gap-y-8">
+                        <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl text-black mb-2">Community Partner</h1>
+                        <div class="w-full flex items-center justify-center">
+                            <div class="flex flex-col items-center text-center max-w-3xl w-full mx-16">
+                                <a target="_blank" href="https://lorong.ai/">
+                                    <img src="assets/partners/lai_logo.png" alt="Lorong AI" class="h-26 md:h-48 object-contain hover:scale-105 duration-300 ease-in-out hover:-rotate-1">
+                                </a>
+                                <p class="pt-4 my-4 text-[1.25rem]">Lorong AI brings together government, industry, and research to build Singapore's AI ecosystem. A collaborative hub for AI practitioners connect, innovate, and shape the future of AI in Singapore throughout curated programs and a supportive community. </p>
+                            </div>
+                            <div class="w-full flex justify-center hidden md:block mr-16 ml-4">
+                                <iframe class="w-[40vw] h-[40vh] md:w-[40vw] md:h-[40vh] rounded-2xl shadow-lg mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7974164702796!2d103.78443407373646!3d1.2961723617485987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1b004563f163%3A0xc1338ecee481d898!2sLorong%20AI%20%40%20One-North!5e0!3m2!1sen!2ssg!4v1784179778266!5m2!1sen!2ssg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            </div>
+                        </div>
+                        <iframe class="block md:hidden w-full h-[40vh] mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7974164702796!2d103.78443407373646!3d1.2961723617485987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1b004563f163%3A0xc1338ecee481d898!2sLorong%20AI%20%40%20One-North!5e0!3m2!1sen!2ssg!4v1784179778266!5m2!1sen!2ssg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        <div class="h-px w-full bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+                        <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl text-black mb-10 ">Our Partners</h1>
+                        <div class="w-full flex flex-wrap items-center justify-center gap-12 md:gap-24">
+                            <a target="_blank" href="https://hackclub.com/">
+                                <img src="assets/partners/hackclublogo.png" alt="Hack Club" class="h-28 md:h-44 object-contain hover:scale-105 duration-300 ease-in-out hover:-rotate-2">
+                                <center><h1 class="pt-2 text-[1.25rem]">Hack Club</h1></center>
+                            </a>
+                            <a target="_blank" href="https://www.sginnovate.com/">
+                                <img src="assets/partners/sginnovate-logo.jpg" alt="SGInnovate" class="h-28 md:h-44 object-contain hover:scale-105 duration-300 ease-in-out hover:rotate-2">
+                                <center><h1 class="pt-2 text-[1.25rem]">SGInnovate</h1></center>
+                            </a>
+                            <!-- <a target="_blank" href="https://superteam.sg/">
+                                <img src="assets/partners/superteamlogo.jpg" alt="Superteam" class="h-28 md:h-44 object-contain hover:scale-105 duration-300 ease-in-out hover:rotate-2">
+                                <center><h1 class="pt-2 text-[1.25rem]">Superteam SG</h1></center>
+                            </a> -->
+                        </div>
+                        <div class="w-full flex flex-wrap items-center justify-center gap-8 md:gap-16">
+                            <a target="_blank" href="https://gen.xyz/">
+                                <img src="assets/partners/xyz-logo-color.png" alt=".xyz" class="h-14 md:h-22 object-contain hover:scale-105 duration-300 ease-in-out hover:-rotate-2">
+                                <center><h1 class="pt-2 text-[0.8rem] md:text-[1.15rem]">.xyz</h1></center>
+                            </a>
+                            <a target="_blank" href="https://codecrafters.io/">
+                                <img src="assets/partners/codecrafterslogo.svg" alt="CodeCrafters" class="h-14 md:h-22 object-contain hover:scale-105 duration-300 ease-in-out hover:rotate-2">
+                                <center><h1 class="pt-2 text-[0.8rem] md:text-[1.15rem]">CodeCrafters</h1></center>
+                            </a>
+                            <a target="_blank" href="https://www.wolfram.com/">
+                                <img src="assets/partners/wolfram-logo.svg" alt="Wolfram" class="h-14 md:h-22 object-contain hover:scale-105 duration-300 ease-in-out hover:-rotate-2">
+                                <center><h1 class="pt-2 text-[0.8rem] md:text-[1.15rem]">Wolfram</h1></center>
+                            </a>
+                            <a target="_blank" href="https://www.mobbin.com/">
+                                <img src="assets/partners/mobbinlogo.svg" alt="Mobbin" class="h-14 md:h-22 object-contain hover:scale-105 duration-300 ease-in-out hover:rotate-2">
+                                <center><h1 class="pt-2 text-[0.8rem] md:text-[1.15rem]">Mobbin</h1></center>
+                            </a>
+                            <a target="_blank" href="https://nordvpn.com/">
+                                <img src="assets/partners/nordvpnlogo.jpg" alt="NordVPN" class="h-14 md:h-22 object-contain hover:scale-105 duration-300 ease-in-out hover:-rotate-2">
+                                <center><h1 class="pt-2 text-[0.8rem] md:text-[1.15rem]">NordVPN</h1></center>
+                            </a>
+                        </div>
+                        <!-- <img src="assets/placeholderlogo.png" alt="???" class="h-26 md:h-48 object-contain">
+                        <img src="assets/placeholderlogo.png" alt="???" class="h-26 md:h-48 object-contain"> -->
+                    </div>
+
+                    <div class="border border-[#2989c8] border-4 rounded-3xl my-4 p-8 shadow-xl mt-16 mx-[2vh] md:mx-16 lg:mx-32">
+                        <center>
+                            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-4">Sponsor us!</h1>
+                        </center>
+                        <h2 class="text-1xl md:text-2xl my-4 md:text-justify">
+                            The next generation of software engineers, designers and entrepreneurs are coming to hackathons to have fun, compete for prizes, and learn new skills. Sponsoring a hackathon is a great way to get access to the top IT and technical talent. By sponsoring CloudHacks, you'll not only gain exposure and brand recognition but also high levels of student engagement, and maybe even see a problem you face in your organization solved.
+                            <br><br>
+                            <center>
+                                <b>Want to make a lasting impression on the next generation of innovators?</b>
+                                <br><br>
+                                <div class="relative inline-block mt-4 group">
+                                    <img class="absolute bottom-6 left-1/2 -translate-x-1/2 translate-y-8 opacity-0 group-hover:translate-y-8 w-[0vw] group-hover:w-[40vw] group-hover:md:w-[25vw] group-hover:lg:w-[15vw] group-hover:opacity-100 transition-all duration-500 ease-out z-0 pointer-events-none" src="assets/cats/sit.png">
+                                    <a class="whitespace-nowrap relative shadow-xl px-4 sm:px-6 md:px-10 py-4 mt-4 bg-gradient-to-r from-[#1f6899] to-[#2989c8] rounded-2xl text-base sm:text-lg md:text-2xl text-white font-bold overflow-hidden cursor-pointer hover:scale-105 duration-300 inline-block" href="mailto:sponsor@cloudhacks.org" target="_blank">
+                                        <span class="absolute inset-0 bg-white opacity-40 rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] blur-sm transition-transform duration-600"></span> 
+                                        <span class="relative z-10">sponsor@cloudhacks.org</span>
+                                    </a>
+                                </div>
+                            </center>
+                        </h2>
+                    </div>
                 </div>
             </section>
         </main>
+
+        <footer class="w-full mt-auto bg-white">
+            <img src="assets/footer.png" alt="CloudHacks Footer" class="w-full h-auto block">
+            <div class="mx-[5vh] md:mx-[10vh] lg:mx-[30vh]">
+                <center>
+                    <!-- uncomment when socials are ready -->
+                    <!-- <a class="underline mx-2" href="https://www.instagram.com/cloudhacks__/">Instagram</a>
+                    <a class="underline mx-2" href="insert discord link here">Discord</a> -->
+                    <h1 class="-my-2 mx-1">CloudHacks is fiscally sponsored by HCB, a project by The Hack Foundation (d.b.a. Hack Club), a 501 (c) (3) nonprofit. (EIN: 81-2908499)</h1>
+                    <br>
+                    <h1 class="-my-2 mx-1">© 2026 CloudHacks. All rights reserved.</h1>
+                    <br>
+                </center>
+            </div>
+        </footer>
+
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script>
+    // from https://pagedone.io/docs/confetti-animation
+    var count = 500;
+    var defaults = {
+        origin: { y: 0.5, x: 0.5 },
+    };
+
+    var fireBtn = document.getElementById("Fire");
+    if (fireBtn) {
+        fireBtn.onclick = FireCannon;
+    }
+
+    document.getElementById("Fire").onclick = FireCannon;
+
+    function Fire(particleRatio, opts) {
+        confetti(Object.assign({}, defaults, opts, {
+            particleCount: Math.floor(count * particleRatio)
+        }));
+    }
+
+    function FireCannon() {
+
+        Fire(0.25, {
+            spread: 26,
+            startVelocity: 55,
+        });
+        Fire(0.2, {
+            spread: 60,
+        });
+        Fire(0.35, {
+            spread: 100,
+            decay: 0.91,
+            scalar: 0.4
+        });
+        Fire(0.1, {
+            spread: 120,
+            startVelocity: 25,
+            decay: 0.92,
+            scalar: 1.2
+        });
+        Fire(0.1, {
+            spread: 120,
+            startVelocity: 45,
+        });
+    }
+</script>
 </body>
 </html>
