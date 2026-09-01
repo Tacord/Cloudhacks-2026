@@ -849,6 +849,9 @@
   .bg-\[\#e3eff4\] {
     background-color: #e3eff4;
   }
+  .bg-\[\#e3eff4\]\/50 {
+    background-color: color-mix(in oklab, #e3eff4 50%, transparent);
+  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
