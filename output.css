@@ -570,17 +570,8 @@
   .w-\[25vh\] {
     width: 25vh;
   }
-  .w-\[25vw\] {
-    width: 25vw;
-  }
-  .w-\[30vw\] {
-    width: 30vw;
-  }
   .w-\[40vw\] {
     width: 40vw;
-  }
-  .w-\[50vw\] {
-    width: 50vw;
   }
   .w-\[70vw\] {
     width: 70vw;
@@ -1106,6 +1097,9 @@
   .text-\[\#2c92d5\] {
     color: #2c92d5;
   }
+  .text-\[\#f27152\] {
+    color: #f27152;
+  }
   .text-\[\#ffcf56\] {
     color: #ffcf56;
   }
@@ -1539,19 +1533,9 @@
       width: 15vw;
     }
   }
-  .md\:w-\[22vw\] {
-    @media (width >= 48rem) {
-      width: 22vw;
-    }
-  }
   .md\:w-\[30vh\] {
     @media (width >= 48rem) {
       width: 30vh;
-    }
-  }
-  .md\:w-\[30vw\] {
-    @media (width >= 48rem) {
-      width: 30vw;
     }
   }
   .md\:w-\[40vw\] {
@@ -1675,11 +1659,6 @@
   .lg\:min-h-\[40vh\] {
     @media (width >= 64rem) {
       min-height: 40vh;
-    }
-  }
-  .lg\:w-\[15vw\] {
-    @media (width >= 64rem) {
-      width: 15vw;
     }
   }
   .lg\:w-\[25vh\] {
